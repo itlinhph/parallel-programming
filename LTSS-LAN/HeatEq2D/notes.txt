@@ -1,0 +1,2 @@
+Heat from center of plate (100 center points)
+Surrounding temp: room temp 25C.

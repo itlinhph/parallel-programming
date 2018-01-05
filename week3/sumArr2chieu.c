@@ -6,12 +6,12 @@
 
 int main() {
 	int *a, Stt=0, Sss=0;
-
+	int i;
 	a= (int *)malloc(sizeof(int) *N);
 	for(i=0; i<N; i++) {
 		*(a+i) = i;
 	}
-	for (int i = 0; i < N; i++) 
+	for (i = 0; i < N; i++) 
 		Stt = Stt + *(a+i) ;
 	printf("Tong tuan tu = %d\n", Stt) ;
 
@@ -24,7 +24,7 @@ int main() {
 		Sid= id*Nid ;
 		Eid = Sid + Nid;
 		for(i = Sid; i<Eid; i++) 
-			Sss = *Sss + *(a+i) ;
+			Sss = Sss + *(a+i) ;
 	}
 	for(i=0; i<30; i++) {
 		printf("%d \t", *(s+i));
